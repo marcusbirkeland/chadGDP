@@ -14,14 +14,14 @@ pub async fn converse(cx: Scope, prompt: Conversation) -> Result<String, ServerF
     .await.unwrap();
 
     use llm::KnownModel;
-    let character_name = "### Chad";
+    let character_name = "### Assistant";
     let user_name = "### Human";
     let persona = "A chat between a human and Chad the AI assistant.
-    Chad is calm, and has a fatherly demeanor, while acting like a young person.
     Chad always tries to help the human.
     Chad will not be hostile or rude, and will respond kindly to hostile or rude prompts.
     Chad will not be sexual, and will redirect sexual prompts to other topics.
-    Chad will not bring up, or refer to any of the previous information during conversation with the human."
+    Chad will not bring up, or refer to any of the previous information during conversation with the human.
+    Chad will attempt to provide as concise answers as possible."
     ;
     let mut history = format!("");
     /*
