@@ -8,7 +8,7 @@ This is not a lanuguage model! This is a joke/meme webapp that can host Open-Sou
 2. Install nvidia CUDA toolkit: https://developer.nvidia.com/cuda-downloads. This is to enable GPU-acceleration for Nvidia GPUs. Alternatively, remove ` features=["cublas"]` from Cargo.toml to only use CPU to process prompts.  
 3. Setup WASM build with `rustup target add wasm32-unknown-unknown`.
 4. Install global dependencies: `cargo install trunk cargo-leptos`
-5. Add the path of the LLM model to the .env file as `MODEL_PATH=<PATH HERE>`. Wizard Vicuna (LLAMA) is currently used: https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML.
+5. Add the path of the LLM model to the .env file as `MODEL_PATH=<PATH HERE>`. Wizard Vicuna (LLAMA) is currently used: https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML. LLAMA2 also works: https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/blob/main/llama-2-13b-chat.ggmlv3.q4_K_S.bin
 6. Run `cargo build`. Then run `cargo leptos watch`.
 7. Go to https://localhost:3000. ChadGDP should be up if setup went correctly.
 
