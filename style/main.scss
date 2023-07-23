@@ -5,6 +5,65 @@ body {
 	color: #ddd;
 }
 
+.header-title>h1{
+	font-size: 2.5rem;
+}
+
+.header{
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.header-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.GDP{
+	font-weight: 700;
+	color: #5d4efe;
+}
+
+.shit {
+	gap: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.S {
+	color:#0051ff;
+}
+.H {
+	color: rgb(255, 0, 204);
+}
+.I {
+	color: limegreen;
+}
+.T{
+	color: rgb(204, 255, 0);
+}
+
+.chad-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	margin-right: 1rem;
+	padding: 1rem;
+	padding-right: 1.2rem;
+  background:
+  linear-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%)
+   0 0/100% 200%;
+  animation: chad_anim 2s linear infinite;
+}
+
+@keyframes chad_anim {
+  to {background-position:0 -200%}
+}
+
 .chat-container {
 	display: flex;
 	flex-direction: column;
@@ -14,10 +73,11 @@ body {
 	max-height: 90vh;
 	overflow-y: auto;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 1200px;
 	background-color: #111;
 	border-radius: 1rem;
-	padding: 6rem 0;
+	padding-top: 1rem;
+	padding-bottom: 6rem;
 }
 
 .msg-user, .msg-model {
@@ -42,70 +102,35 @@ body {
 .msg-model {
 	background-color: #333;
 	align-self: flex-start;
-	margin-left: 2rem;
+	margin-left: 3rem;
 }
 
-.header-title>h1{
-	font-size: 2.5rem;
+.text-form{
+	position: relative;
+	max-width: fit-content;
+	margin: 0 auto;
+	bottom: 60px;
 }
 
-.header{
-	margin-bottom: 4rem;
-	margin-top: 1rem;
+.chat-input{
+	width: 90vw;
+	max-width: 600px;
+	padding: 0.8rem 1rem;
+	border-radius: 0.6rem;
+	background-color: #222;
+	border: 0px;
+	color: #ddd;
 }
 
-.header-title{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-
-.GDP{
-	font-weight: 700;
-	color: #5d4efe;
-}
-
-.shit {
-	gap: 0.2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.S {
-	color:#0051ff;
-}
-
-.H {
-	color: rgb(255, 0, 204);
-}
-
-.I {
-	color: limegreen;
-}
-
-.T{
-	color: rgb(204, 255, 0);
-}
-
-.chad-img {
-	width: 80px;
-	height: 80px;
-	border-radius: 100%;
-	margin-right: 1rem;
-	padding: 1rem;
-	padding-right: 1.2rem;
-  background:
-  linear-gradient(rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%)
-   0 0/100% 200%;
-  animation: chad_anim 2s linear infinite;
-}
-
-@keyframes chad_anim {
-  to {background-position:0 -200%}
+.submit-btn{
+	border-radius: 0.5rem;
+	background-color: #3936fe;
+	border: 0px !important;
+	color: #fff;
+	padding: 0.5rem;
+	position: absolute;
+	right: 8px;
+	top: 5px;
 }
 
 
