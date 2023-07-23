@@ -11,8 +11,8 @@ pub fn TypeArea(cx: Scope, send: Action<String, Result<String, ServerFnError>>) 
         send.dispatch(input.value());
         input.set_value("");
       }>
-        <input type="text" node_ref=input_ref/>
-        <input type="submit" />
+        <input class="chat-input" type="text" node_ref=input_ref/>
+        <input class="submit-btn" type="submit" />
       </form>
     </div>
   }

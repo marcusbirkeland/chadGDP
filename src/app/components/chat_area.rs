@@ -13,7 +13,7 @@ pub fn ChatArea(cx: Scope, conversation: ReadSignal<Conversation>) -> impl IntoV
     });
 
     view! {cx,
-      <div node_ref=chat_div_ref>
+      <div class="chat-container" node_ref=chat_div_ref>
       {move || conversation.get().messages.iter().map( move |message| {
 
         let class_str = if message.user {

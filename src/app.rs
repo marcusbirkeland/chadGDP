@@ -3,6 +3,7 @@ use leptos_meta::*;
 use crate::api::converse;
 use crate::model::conversation::{Conversation, Message};
 mod components;
+use components::header::Header;
 use components::chat_area::ChatArea;
 use components::type_area::TypeArea;
 
@@ -50,6 +51,7 @@ pub fn App(cx: Scope) -> impl IntoView {
         // id=leptos means cargo-leptos will hot-reload this stylesheet
         <Stylesheet id="leptos" href="/pkg/leptos_start.css"/>
         <Title text="ChadGDP"/>
+        <Header />
         <ChatArea conversation/>
         <TypeArea send/>
     }
