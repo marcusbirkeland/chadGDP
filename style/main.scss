@@ -3,10 +3,30 @@ body {
 	text-align: center;
 	background-color: #222;
 	color: #ddd;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .header-title>h1{
-	font-size: 2.5rem;
+	font-size: 2.7rem;
+
+}
+
+.GDP{
+	font-weight: 700;
+	font-size: 3rem;
+	color: #5d4efe;
+}
+
+.hidden {
+	display: none;
+}
+
+.msg-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
 }
 
 .header{
@@ -22,29 +42,16 @@ body {
 	margin-bottom: 1rem;
 }
 
-.GDP{
-	font-weight: 700;
-	color: #5d4efe;
-}
-
 .shit {
 	gap: 0.2rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-}
-.S {
-	color:#0051ff;
-}
-.H {
-	color: rgb(255, 0, 204);
-}
-.I {
-	color: limegreen;
-}
-.T{
-	color: rgb(204, 255, 0);
+	color: #009281;
+	font-size: 0.8rem;
+	margin-top: 0.1rem;
+	//color: #817fff;
 }
 
 .chad-img {
@@ -67,16 +74,15 @@ body {
 .chat-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 600px;
-	max-height: 90vh;
+	align-items: start;
+	min-height: 400px;
+	max-height: 60vh;
 	overflow-y: auto;
 	margin: 0 auto;
 	max-width: 1200px;
 	background-color: #111;
 	border-radius: 1rem;
-	padding-top: 1rem;
+	padding-top: 4rem;
 	padding-bottom: 6rem;
 }
 
@@ -86,23 +92,33 @@ body {
 	justify-content: center;
 	text-align: start;
 	margin: 0.5rem;
-	max-width: 600px !important;
+	max-width: 500px !important;
 	padding: 0.75rem 0.75rem;
 	border-radius: 0.5rem;
 	max-width: 800px;
 	color: #ddd;
 }
 
+.container-user{
+	align-self: flex-end;
+}
+
 .msg-user {
 	background-color: #6051ff;
-	align-self: flex-end;
+	align-self: flex-end !important;
 	margin-right: 3rem;
+}
+
+.chad-msg-icon{
+	width: 32px !important;
+	height: 32px !important;
+	padding: 0.2rem !important;
+	margin-left: 3rem;
+	margin-right: 0;
 }
 
 .msg-model {
 	background-color: #333;
-	align-self: flex-start;
-	margin-left: 3rem;
 }
 
 .text-form{
@@ -139,12 +155,5 @@ body {
 }
 
 .brown{
-	color: #8B4513 !important;
-	font-size: 2rem;
-	font-family: 'Courier New', Courier, monospace;
-}
-
-.shit {
-	font-size: 0.8rem;
-	margin-top: 0;
+	color: #07c0aa;
 }

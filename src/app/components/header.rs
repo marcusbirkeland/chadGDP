@@ -13,12 +13,12 @@ pub fn Header(cx:Scope) -> impl IntoView {
         <span class="brown">
           "SHIT"
         </span>
-        " language model!"</h2>
-        <h3 class="shit">"("
+        " language model"</h2>
+        <h3 class="shit">
           <span class="S">"Self"</span>
           <span class="H">"Hosted"</span>
           <span class="I">"Imbecile"</span>
-          <span class="T">"Transformer"</span>")"
+          <span class="T">"Transformer"</span>
         </h3>
       </div>
     </div>

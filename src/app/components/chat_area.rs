@@ -22,11 +22,25 @@ pub fn ChatArea(cx: Scope, conversation: ReadSignal<Conversation>) -> impl IntoV
           "msg-model"
         };
 
-        view! {cx,
-          <div class={class_str}>
-            {message.text.clone()}
-          </div>
+        let container_class = if message.user {
+          "container-user"
+        } else {
+          "container-model"
+        };
 
+        let img_class = if !message.user {
+          "chad-msg-icon"
+        } else {
+          "hidden"
+        };
+
+        view! {cx,
+          <div class={format!("msg-container {}", container_class)}>
+            <img class={format!("chad-img {}", img_class)} src="https://i.imgur.com/3gITj2O.png" />
+            <div class={class_str}>
+              {message.text.clone()}
+            </div>
+          </div>
         }
       }).collect::<Vec<_>>()
       }
