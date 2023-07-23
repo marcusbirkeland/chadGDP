@@ -5,7 +5,11 @@
 3. Setup WASM build with `rustup target add wasm32-unknown-unknown`.
 4. Add the path of the LLM model to the .env file as `MODEL_PATH=<PATH HERE>`. Wizard Vicuna (LLAMA) is currently used: https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML.
 5. Open this repo, and run `cargo build`. Then run `cargo leptos watch`.
-6. Go to https://localhost:3000
+6. Go to https://localhost:3000. ChadGDP should be up if setup went correctly.
+
+
+![image](https://github.com/marcusbirkeland/chadGDP/assets/36818485/af46278e-343b-4890-bd75-154c5f19f1fd)
+
 
 ## Credits
 Check out LLM for more information about how to use llm in rust: https://github.com/rustformers/llm
