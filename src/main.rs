@@ -65,7 +65,7 @@ cfg_if! {
             let model_path = env::var("MODEL_PATH").expect("MODEL_PATH must be set");
             let model_parameters = llm::ModelParameters {
                 prefer_mmap: true,
-                context_size: 4096,
+                context_size: 2048,
                 lora_adapters: None,
                 use_gpu: true,
                 gpu_layers: Some(50),
