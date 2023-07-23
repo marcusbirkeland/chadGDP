@@ -1,3 +1,7 @@
+# ChadGDP
+
+This is not a lanuguage model! This is a joke/meme webapp that can host Open-Source LLMs with Rust and Leptos.
+
 # How to use
 
 1. Install Rust: https://www.rust-lang.org/learn/get-started
