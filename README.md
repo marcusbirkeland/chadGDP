@@ -6,3 +6,7 @@
 4. Add the path of the LLM model to the .env file as `MODEL_PATH=<PATH HERE>`. Wizard Vicuna (LLAMA) is currently used: https://huggingface.co/TheBloke/Wizard-Vicuna-7B-Uncensored-GGML.
 5. Open this repo, and run `cargo build`. Then run `cargo leptos watch`.
 6. Go to https://localhost:3000
+
+## Credits
+Check out LLM for more information about how to use llm in rust: https://github.com/rustformers/llm
+Source code based on amazing tutorial/repo RustyLlama: https://github.com/MoonKraken/rusty_llama
